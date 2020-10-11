@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <img src="google logo.jpg" alt="Google logo" id = "googleIcon"> 
+    </head>
+    <body>
+        <div id = "container1">
+            <a id="googleSearch" href="http://127.0.0.1:5500/CS50_verified/search/index.html">Go to Google Search</a> <br>
+           
+            <a id="googleImageAdvanced" href="http://127.0.0.1:5500/CS50_verified/search/googleimage.html" >Go to Google Image Search</a> <br>
+        <h1 class="text-center"> Advanced Search</h1><br><hr>
+    
+       </div>
+       <h2> Find pages with...</h2>
+<div id = "searchParameters">
+    <form  class = "container2"action="https://www.google.com/search">
+        <h3 id = "q1">all these words...</h3>
+         <input type="text" class = "round1" name="as_q">
+        <h3 id = "q2"> this exact phrase or words:</h3>                 
+             <input type="text" class = "round2" name="as_epq">
+                <h3 id = "q3"> any of these words:</h3>                 
+        <input type="text" class = "round3" name="as_oq">
+            <h3 id = "q4"> none of these words: </h3>                 
+             <input type="text" class = "round4" name="as_eq">
+         <input type="submit"  value="Advanced Search" id="advancedsearchbutton">
+</form>
+        </div>
+               
+    </body>
+</html>
