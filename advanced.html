@@ -3,51 +3,30 @@
     <head>
         <title>Search</title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <img src="google logo.jpg" alt="Google logo" id = "googleIcon"> 
     </head>
     <body>
-        <div class="header">
-            <img src="Google transparent.png" alt="Google logo" id = "googleIcon"> 
-        </div>
-                <div>
-            <a id="googleSearch" href="index.html"> Google Search</a> <br>
-            <a id="googleImageAdvanced" href="googleimage.html" > Google Image Search</a> <br>
-        <h1> Advanced Search</h1><br>
+        <div id = "container1">
+            <a id="googleSearch" href="http://127.0.0.1:5500/CS50_verified/search/index.html">Go to Google Search</a> <br>
+           
+            <a id="googleImageAdvanced" href="http://127.0.0.1:5500/CS50_verified/search/googleimage.html" >Go to Google Image Search</a> <br>
+        <h1 class="text-center"> Advanced Search</h1><br><hr>
     
        </div>
-        <table class = "advancedDetails">
-        <thead>
-            <th id="advancedheading2"> Find pages with...</th>
-            <th> </th>
-            <th id="advancedHeading3" > To do this in the search box. </th>
-        </thead>
-        <tbody>
-            <form  class = "container2"action="https://www.google.com/search">
-            <tr>
-                <td id="q1">all these words:</td>
-                <td> <input type="text" class = "round1" name="as_q"></td>
-                <td id="advancedSearchDetails" class="descr1">Type the important words: tri-colour rat terrier </td>
-            </tr>
-            <tr>
-                 <td id="q2">this exact word or phrase:</td>
-                 <td><input type="text" class = "round2" name="as_epq"> </td>
-                 <td id="advancedSearchDetails" class="descr2">Put exact words in quotes: "rat terrier"</td>
-            </tr>
-            <tr>
-                <td id="q3">any of these words:</td>
-                <td> <input type="text" class = "round3" name="as_oq"></td>
-                <td id="advancedSearchDetails"class="descr3">Type OR between all the words you want: miniature OR standard</td>
-            </tr>
-            <tr>
-                <td id="q4">none of these words:</td>
-                <td> <input type="text" class = "round4" name="as_eq"> </td>
-                <td id="advancedSearchDetails" class="descr4">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</td>
-            </tr>
-            <input type="submit"  value="Advanced Search" id="advancedsearchbutton">
-            </form>
-        </tbody>
-    </table>
-      
-</div>
-
-</body>
+       <h2> Find pages with...</h2>
+<div id = "searchParameters">
+    <form  class = "container2"action="https://www.google.com/search">
+        <h3 id = "q1">all these words...</h3>
+         <input type="text" class = "round1" name="as_q">
+        <h3 id = "q2"> this exact phrase or words:</h3>                 
+             <input type="text" class = "round2" name="as_epq">
+                <h3 id = "q3"> any of these words:</h3>                 
+        <input type="text" class = "round3" name="as_oq">
+            <h3 id = "q4"> none of these words: </h3>                 
+             <input type="text" class = "round4" name="as_eq">
+         <input type="submit"  value="Advanced Search" id="advancedsearchbutton">
+</form>
+        </div>
+               
+    </body>
 </html>

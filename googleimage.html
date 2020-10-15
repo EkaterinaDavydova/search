@@ -6,20 +6,18 @@
         <img src="google logo.jpg" alt="Google logo" id = "googleLogo"> <br>
     </head>
     <body>
-        <div>
-            <a id="googleSearch" href="index.html">Google Search</a> <br>
-            <a id ="googleAdvanced" href="advanced.html">Google Advanced Search</a><br>
-        </div>
-        <div>
-                  <form  class = "container2"action="https://www.google.com/search">
+        <div id = "container1">
+            <a id="googleSearch" href="http://127.0.0.1:5500/CS50_verified/search/index.html">Go to Google Search</a> <br>
+            <a id ="googleAdvanced" href="http://127.0.0.1:5500/CS50_verified/search/advanced.html">Go to Google Advanced Search </a>
+<br>
+           
+</div>
+<div id = "searchForm">
+                     <form  class = "container2"action="https://www.google.com/search">
                         <input type = "hidden" name = "tbm" value = "isch">
-                        <input type="text" class = "round" name="q" placeholder="Search Google image or type a URL">
-                        <input type="submit"  value="Google Image Search" id="imagesearchbutton">
+                   <input type="text" class = "round" name="q" placeholder="Search Google image or type a URL">
+                   <input type="submit"  value="Google Image Search" id="imagesearchbutton">
                   </form>
-        </div>
-         <footer>
-                 <a  id="footerLinks" href="https://google.com/search/howsearchworks/?fg=1"> How Search works </a>
-                <a id="footerLinks" href="https://policies.google.com/terms?hl=en-NL&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/terms%3Fhl%3Den-NL%26fg%3D1&amp;ved=0ahUKEwigzqy926_sAhUE3IUKHUfhDf4Q8qwCCBc">Terms</a>
-        </footer>
+                  </div>
     </body>
 </html>
